@@ -22,7 +22,7 @@ echo ""
 # Modifying on the basis of Task1
 echo "12 Largest Lines Are:"
 echo "============="
-find / 2>/dev/null -type f -executable ls -lh {} + | sort -k5 -hr| head -n -12 | awk '{print $3,$5,$9}'
+find / 2>/dev/null -type f -executable ls -alh {} + | sort -k5 -hr| head -n -12 | awk '{print $3,$5,$9}'
 echo ""
 # for the task, add
 # commands to display a title
